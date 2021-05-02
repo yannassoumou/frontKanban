@@ -1,0 +1,49 @@
+<h3>Ajouter une fiche </h3>
+<hr>
+<form>
+  <div class="input-group mb-3 mt-3">
+    <span class="input-group-text" id="lib">Libellé</span>
+    <input [(ngModel)]="fiche.libelle" type="text" class="form-control" placeholder="Libellé" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3 mt-3">
+    <span class="input-group-text" id="lieu">Libellé</span>
+    <input [(ngModel)]="fiche.lieu" type="text" class="form-control" placeholder="Lieu" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3 mt-3">
+    <span class="input-group-text" id="url">Libellé</span>
+    <input [(ngModel)]="fiche.url" type="text" class="form-control" placeholder="Url" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3 mt-3">
+    <span class="input-group-text" id="timetodo">Temps de realisation</span>
+    <input [(ngModel)]="fiche.timeTodo" type="date" class="form-control" placeholder="Date de fin" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group mb-3 mt-3">
+    <span class="input-group-text" id="dateFin">date de fin</span>
+    <input [(ngModel)]="fiche.dateFin" type="date" class="form-control" placeholder="Date de fin" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+  <div class="input-group">
+    <span class="input-group-text">Description</span>
+    <textarea [(ngModel)]="fiche.note" class="form-control" aria-label="With textarea"></textarea>
+  </div>
+
+  <div class="input-group mb-3 mt-3">
+    <span class="input-group-text" id="resplab">Responsable</span>
+    <select [(ngModel)]="fiche.emailResp" class="form-select" id="resp">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="input-group mb-3 mt-3">
+    <span class="input-group-text" id="basic-addon3">Section</span>
+    <select [(ngModel)]="fiche.sectionId" class="form-select" id="section">
+      <option selected>Choose...</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+</form>
