@@ -34,3 +34,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 # frontKanban
+
+@angular/cli                    11.2.10
+@angular/cli                    11.2.10
+@angular/material               11.2.10
+@schematics/angular             11.2.10
+@schematics/update              0.1102.10
+rxjs                            6.6.7
+typescript                      4.1.5
+
