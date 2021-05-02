@@ -1,13 +1,30 @@
-<p>fiches works!</p>
-<ul>
-  <li *ngFor="let fiche of listeFiche">
-      {{ fiche.libelle }}
-  </li>
-</ul>
+<h3>Liste de toutes les fiches</h3>
+
 <div class="container">
   <div class="row">
-    <div class="col-md-4">.col-md-4</div>
+    <div class="toast-container col-md-3">
+      <h3>A Faire</h3>
+      <div *ngFor="let fiche of listeFiche" class="toast show">
+        <div class="toast-header">
+          <img src="..." class="rounded me-2" alt="...">
+          <strong class="me-auto">{{ fiche.libelle }}</strong>
+          <small class="text-muted">Fin le: {{ fiche.dateFin | date: 'dd/MM/yyyy' }}</small>
+<!--                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>-->
+        </div>
+        <div class="toast-body">
+          <p>Tags: {{ fiche.ficheTag }}</p>
+          <hr>
+          <p>Resposable: {{ fiche.emailResp }}</p>
+          <div class="mt-2 pt-2 border-top">
+            <button type="button" class="btn btn-primary btn-sm">Détail</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <div class="col-md-4">.col-md-4</div>
     <div class="col-md-4">.col-md-4</div>
   </div>
 </div>
+
+

@@ -7,19 +7,23 @@ import {AppRoutingModule} from './app-routing.module';
 import {FichesComponent} from './fiches/fiches.component';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AjoutFicheComponent } from './ajout-fiche/ajout-fiche.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FichesComponent
+    FichesComponent,
+    AjoutFicheComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

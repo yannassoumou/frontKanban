@@ -16,7 +16,7 @@ export class FichesComponent implements OnInit {
 
   ngOnInit(): void {
     // , 'ehuie@hotmail.fr'
-    this.fichesService.getFicheBySectionId('2').subscribe((data) => {
+    this.fichesService.getFicheBySectionId('1').subscribe((data) => {
       this.listeFiche = data;
     });
   }

@@ -41,5 +41,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 @schematics/angular             11.2.10
 @schematics/update              0.1102.10
 rxjs                            6.6.7
-typescript                      4.1.5
+typescript    
+                  
+                  4.1.5
 
+https://www.codeply.com/p/WGCqYEiPBg
