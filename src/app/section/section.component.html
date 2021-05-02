@@ -1,0 +1,12 @@
+<p>section works!</p>
+<label for="">Entrer une section</label>
+<br>
+<input [(ngModel)]="nameSection">
+<br>
+<button (click)="createSection()">Creer une section</button>
+
+<p>Liste Section</p>
+<select [(ngModel)]="listSection">
+  <option [value]="section.id_section"
+          *ngFor="let section of listSection">{{section.name_section}}</option>
+</select>
