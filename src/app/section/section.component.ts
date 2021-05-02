@@ -10,6 +10,8 @@ import {SectionService} from '../_service/sections/section.service';
 export class SectionComponent implements OnInit {
   nameSection: string;
   listSection: Section[] = [];
+  success: boolean;
+  searchSectionName = '';
 
   constructor(private sectionService: SectionService) {
   }
@@ -26,10 +28,13 @@ export class SectionComponent implements OnInit {
     if (this.nameSection !== '') {
       let section = new Section(this.nameSection, true);
       this.sectionService.setSection(section).subscribe(data => {
-        this.reloadPage();
+        // this.reloadPage();
+        this.success = data;
       });
     }
   }
+
+  // addSectionTotbk();
 
   reloadPage(): void {
     window.location.reload();

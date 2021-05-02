@@ -10,6 +10,8 @@ import {FichesComponent} from './fiches/fiches.component';
 import {HttpClientModule} from '@angular/common/http';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AjoutFicheComponent } from './ajout-fiche/ajout-fiche.component';
+import { FilterSectionPipePipe } from './filter-section--pipe.pipe';
+import { KanbanComponent } from './kanban/kanban.component';
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { AjoutFicheComponent } from './ajout-fiche/ajout-fiche.component';
     HomeComponent,
     FichesComponent,
     SectionComponent,
-    AjoutFicheComponent
+    AjoutFicheComponent,
+    FilterSectionPipePipe,
+    KanbanComponent
   ],
   imports: [
     BrowserModule,

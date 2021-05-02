@@ -1,0 +1,25 @@
+<p>kanban works!</p>
+<label for="">Entrer un tableau kanban</label>
+<br>
+<input [(ngModel)]="nameTbk">
+<br>
+<button (click)="createTableauKanban()">Creer un Tableau Kanban</button>
+
+<p *ngIf="success" class="alert-success">Tableau Kanban creer !</p>
+
+<BR>
+<label for="">Selectionner un Tableau Kanban</label>
+<input [(ngModel)]="searchTableauKanbanName">
+
+
+<p>Liste des tableau kanban</p>
+<select [(ngModel)]="listTbk">
+
+  <option [value]="tbk.id_tableau"
+          *ngFor="let tbk of listTbk ">{{tbk.name}}</option>
+</select>
+
+
+
+
+

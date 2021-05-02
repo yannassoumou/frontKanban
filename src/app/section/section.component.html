@@ -4,9 +4,17 @@
 <input [(ngModel)]="nameSection">
 <br>
 <button (click)="createSection()">Creer une section</button>
+<p *ngIf="success" class="alert-success">Section creer !</p>
 
-<p>Liste Section</p>
+<BR>
+<label for="">Selectionner une section</label>
+<input [(ngModel)]="searchSectionName">
+
+<p>Liste des Sections</p>
 <select [(ngModel)]="listSection">
   <option [value]="section.id_section"
-          *ngFor="let section of listSection">{{section.name_section}}</option>
+          *ngFor="let section of listSection | filterSectionPipe:'name_section':searchSectionName">{{section.name_section}}</option>
 </select>
+
+
+
